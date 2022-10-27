@@ -1,15 +1,31 @@
-.left{
-    border-radius: 3px;
+.left_content{
     position: relative;
-    margin-left: 11.5rem;
-    width: 348px;
-    height: 90vh;
-    overflow-y: hidden;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+    border-radius: 3px;
+    left: 4.5rem;
+    height: 638px;
+    width: 310px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
-.left:hover{
-    overflow-y: scroll;
+.contents{
+    width: 300px;
 }
+.left_content:hover{
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+.left_content::-webkit-scrollbar-thumb {
+    background-color: rgb(240, 233, 233);
+    border-radius: 100rem;
+}
+.left_content::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 100rem;
+} 
 .btns div{
     display: -webkit-box;
 }
@@ -17,9 +33,6 @@
 .btn__livestream{
     padding: 8px;
     cursor: pointer;
-}
-.btn-item.active{
-    color: rgb(254, 44, 85);
 }
 .btns .iconify{
     font-size: 24.5px;
@@ -100,10 +113,10 @@
 .user__name-little{
     color: rgba(22, 24, 35, 0.75);
     font-weight: 400;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 15px;
 }
-.user__text{
+.user__text-one, .user__text-two{
     color: rgb(254, 44, 68);
     font-size: 12.8px;
     font-weight: 500;
@@ -186,3 +199,8 @@
 .footer{
     margin-top:35px
 }
+
+.btn-item.active{
+    color:rgb(254, 44, 68)
+}
+

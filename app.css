@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+#app{
+    width: 1536px;
+    height: 2118px;
+}
+
+/* ---- main---- */
+.container{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="contain-left.css">
     <link rel="stylesheet" href="contain-right.css">
+    <link rel="stylesheet" href="res.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;display=swap&amp;subset=vietnamese"
+        rel="stylesheet">
     <title>Tik tok</title>
     <script src="https://kit.fontawesome.com/1c5371c178.js" crossorigin="anonymous"></script>
     <!-- 16/6/2022 -->
@@ -17,2050 +21,584 @@
 
 <body>
     <div id="app">
-    <header>
-        <nav class="navbar">
 
-            <!-- <a href="#"><img src="https://muasamthongthai.com/wp-content/uploads/2019/07/Tik-Tok-l%C3%A0-g%C3%AC-1024x600.jpg" alt="Logo"></a>              -->
-            <a href="#">
-                <span class="iconify iconify-logo" data-icon="logos:tiktok"></span>
-            </a>
+        <!-- ------------------header-------------------->
+        <header>
+            <nav class="navbar">
+
+                <a href="#">
+                    <span class="iconify iconify-logo" data-icon="logos:tiktok"></span>
+                </a>
                 <div class="navbar__search">
                     <form class="navbar__input">
                         <input type="text" placeholder="Search accout and video">
                         <button class="navbar__btn">
-                            <span class="iconify" data-icon="clarity:search-line"></span>   
+                            <span class="iconify" data-icon="clarity:search-line"></span>
                         </button>
                     </form>
 
                 </div>
-  
+
                 <div class="navbar__right">
-                    <div class=""> 
-                        <!-- <a href="https://www.tiktok.com/upload?lang=en"> -->          
-                    <div class="navbar__upload--border">
-                        <button class="navbar__upload--btn">
-                            <span class="iconify iconify--plus" data-icon="akar-icons:plus"></span>
-                            <span class="navbar__upload--text">Upload</span> 
-                        </button>
+                    <div class="">
+                        <div class="navbar__upload--border">
+                            <button class="navbar__upload--btn">
+                                <span class="iconify iconify--plus" data-icon="akar-icons:plus"></span>
+                                <span class="navbar__upload--text">Upload</span>
+                            </button>
+                        </div>
+
                     </div>
 
-                </div>
-                   
 
                     <div class="navbar__send">
-                    <div class="navbar__send--top">
-                          <span class="iconify" data-icon="cil:send"></span>
-                          <div class="navbar__send--number">3</div>
-                    </div>
+                        <div class="navbar__send--top">
+                            <span class="iconify" data-icon="cil:send"></span>
+                            <div class="navbar__send--number">3</div>
+                        </div>
 
 
-                    <div class="navbar__send--content">
-                        <div class="navbar__send--arrow">
-                            <span class="iconify" data-icon="bxs:up-arrow"></span>
-                        </div> 
-                           <div class="navbar__send--text">Message</div> 
-                      </div>
+                        <div class="navbar__send--content">
+                            <div class="navbar__send--arrow">
+                                <span class="iconify" data-icon="bxs:up-arrow"></span>
+                            </div>
+                            <div class="navbar__send--text">Message</div>
+                        </div>
                     </div>
 
 
                     <div class="navbar__message">
-                    <div class="navbar__message--top">
-                        <span class="iconify" data-icon="teenyicons:message-minus-outline" style="color: black;"></span> 
-                        <div class="navbar__message--number">5</div>
-                    </div>
-  
+                        <div class="navbar__message--top">
+                            <span class="iconify" data-icon="teenyicons:message-minus-outline"
+                                style="color: black;"></span>
+                            <div class="navbar__message--number">5</div>
+                        </div>
 
-                    <div class="navbar__message--content">
-                        <div class="navbar__message--arrow">
-                            <span class="iconify" data-icon="bxs:up-arrow"></span>
-                        </div> 
-                        <div class="navbar__message--text">Mailbox</div>   
+
+                        <div class="navbar__message--content">
+                            <div class="navbar__message--content-one hidden">
+                                <div class="navbar__message--arrow">
+                                    <span class="iconify" data-icon="bxs:up-arrow"></span>
+                                </div>
+                                <div class="navbar__message--text">Mailbox</div>
+                            </div>
+                            <div class="navbar__message--menu">
+                                <div class="navbar__message--header">
+                                    <h4>Notify</h4>
+                                    <ul>
+                                        <li class="item-one">All activities</li>
+                                        <li class="item">Like</li>
+                                        <li class="item">Comment</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="navbar__message--notify">
+                                        <div class="item-first">
+                                            <p>This month</p>
+
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>liked your comment. 10-12</span>
+                                                    <div class="user_text-footer">
+                                                        <div class="vertical"></div>
+                                                        <span>twetamm: I love your smile, i love u</span>
+                                                    </div>
+                                                </div>
+                                                <img class='img-right' src="./assets/img/img1.jpg">
+                                            </div>
+
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>liked your comment. 10-12</span>
+                                                    <div class="user_text-footer">
+                                                        <div class="vertical"></div>
+                                                        <span>twetamm: I love your smile, i love u</span>
+                                                    </div>
+                                                </div>
+                                                <img class='img-right' src="./assets/img/img1.jpg">
+                                            </div>
+                                            <div class="user_message">
+                                                <img src="./assets/img/img5.jpg">
+                                                <div class="user_text">
+                                                    <h5>baobaonguyen</h5>
+                                                    <span>liked your comment. 5-12</span>
+                                                    <div class="user_text-footer">
+                                                        <div class="vertical"></div>
+                                                        <span>twetamm: You look so beautiful honey. See you soon</span>
+                                                    </div>
+                                                </div>
+                                                <img class='img-right' src="./assets/img/img2.jpg">
+                                            </div>
+                                        </div>
+
+                                        <div class="item-second">
+                                            <p>Before</p>
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>liked your comment. 10-12</span>
+                                                    <div class="user_text-footer">
+                                                        <div class="vertical"></div>
+                                                        <span>twetamm: I love your smile, i love u</span>
+                                                    </div>
+                                                </div>
+                                                <img class='img-right' src="./assets/img/img1.jpg">
+                                            </div>
+
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>liked your comment. 10-12</span>
+                                                    <div class="user_text-footer">
+                                                        <div class="vertical"></div>
+                                                        <span>twetamm: I love your smile, i love u</span>
+                                                    </div>
+                                                </div>
+                                                <img class='img-right' src="./assets/img/img1.jpg">
+                                            </div>
+
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>follow you. 8-12</span>
+                                                </div>
+                                                <button>Follow back</button>
+                                            </div>
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>follow you. 8-12</span>
+                                                </div>
+                                                <button>Follow back</button>
+                                            </div>
+                                            <div class="user_message">
+                                                <img src="./assets/img/img4.jpg">
+                                                <div class="user_text">
+                                                    <h5>phuongnguyen15988</h5>
+                                                    <span>follow you. 8-12</span>
+                                                </div>
+                                                <button>Follow back</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="navbar__info">
-                        <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg">
-                        <div class="navbar__info--arrow">
-                            <span class="iconify" data-icon="bxs:up-arrow"></span>
-                        </div> 
-                        <div class="navbar__info--menu">
-                            <ul>
-                                <li>
-                                    <!-- <a href="#">  -->
-                                        <span class="iconify" data-icon="line-md:account-small"></span>   
-                                        <p class="navbar__info--text">View profile </p>
-                                    <!-- </a> -->
-                                </li>
+                <div class="navbar__info">
+                    <img src="./assets/img/img6.jpg">
+                    <div class="navbar__info--menu">
+                        <ul>
+                            <li>
+                                <span class="iconify" data-icon="line-md:account-small"></span>
+                                <p class="navbar__info--text">View profile </p>
+                            </li>
 
-                                 <li>
-                                            <!-- <a href="#">  -->
-                                         <span class="iconify" data-icon="iconoir:tiktok"></span>
-                                         <p class="navbar__info--text">Get coins </p>
-                                    <!-- </a> -->
-                                <li>
-                                    <!-- <a href="#"> -->
-                                        <span class="iconify" data-icon="icon-park-outline:setting-three"></span>
-                                        <p class="navbar__info--text">Settings</p>
-                                    <!-- </a> -->
-                                </li>
-    
-                                <li>
-                                    <!-- <a href="#"> -->
-                                        <span class="iconify" data-icon="icon-park-outline:handle-a"></span>
-                                        <p class="navbar__info--text">English</p>
-                                    <!-- </a> -->
-                                </li>
-    
-                                <li>
-                                    <!-- <a href="#"> -->
-                                        <span class="iconify" data-icon="fe:question"></span>
-                                        <p class="navbar__info--text">Feedback and help</p>
-                                    <!-- </a> -->
-                                </li>
-    
-                                <li>
-                                    <!-- <a href="#"> -->
-                                        <span class="iconify" data-icon="icon-park-outline:keyboard"></span>
-                                        <p class="navbar__info--text">Keyboard shortcuts</p>
-                                    <!-- </a> -->
-                                </li>
-    
+                            <li>
+                                <span class="iconify" data-icon="iconoir:tiktok"></span>
+                                <p class="navbar__info--text">Get coins </p>
+                            <li>
+                                <span class="iconify" data-icon="icon-park-outline:setting-three"></span>
+                                <p class="navbar__info--text">Settings</p>
+                            </li>
 
-                                <div class="navbar__info-footer">
-                                    <li>
-                                        <!-- <a href="#"> -->
-                                            <span class="iconify" data-icon="ic:outline-log-in"></span>
-                                            <p class="navbar__info--text">Log out</p>
-                                        <!-- </a> -->
-                                    </li>
+                            <li>
+                                <span class="iconify" data-icon="icon-park-outline:handle-a"></span>
+                                <p class="navbar__info--text">English</p>
+                            </li>
+
+                            <li>
+                                <span class="iconify" data-icon="fe:question"></span>
+                                <p class="navbar__info--text">Feedback and help</p>
+                            </li>
+
+                            <li>
+                                <span class="iconify" data-icon="icon-park-outline:keyboard"></span>
+                                <p class="navbar__info--text">Keyboard shortcuts</p>
+                            </li>
+
+
+                            <div class="navbar__info-footer">
+                                <li>
+                                    <span class="iconify" data-icon="ic:outline-log-in"></span>
+                                    <p class="navbar__info--text">Log out</p>
+                                </li>
+                            </div>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+            </nav>
+        </header>
+
+
+        <!-- --------main--------- -->
+        <main>
+            <div>
+                <div class="container">
+
+                    <!-- ------------------contain-left-------------------->
+                    <div class="left_content">
+                        <div class="contents">
+                            <div class="btns">
+                                <div class="btn__home btn-item active">
+                                    <span class="iconify" data-icon="ant-design:home-filled"></span>
+                                    <p class="btn__text">For you</p>
                                 </div>
 
-                            </ul>
-    
+                                <div class="btn__follow btn-item">
+                                    <span class="iconify" data-icon="ic:round-supervisor-account"></span>
+                                    <p class="btn__text">Following</p>
+                                </div>
+
+                                <div class="btn__livestream btn-item">
+                                    <span class="iconify" data-icon="ph:video-camera-duotone"></span>
+                                    <p class="btn__text">LIVE</p>
+                                </div>
+                            </div>
+
+                            <div class="accounts">
+
+                                <p>Suggested accounts</p>
+
+                                <div class="user">
+                                    <img src="./assets/img/img1.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">roses_are_rosie</h6>
+                                            <div class="user__name-little">ROSÉ</div>
+                                        </div>
+                                        <span class="iconify" data-icon="ci:circle-check"></span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img2.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">jennierrubyjane</h6>
+                                            <div class="user__name-little">J</div>
+                                        </div>
+                                        <span class="iconify" data-icon="ci:circle-check"></span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img3.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">sooyaa__</h6>
+                                            <div class="user__name-little">JISOO</div>
+                                        </div>
+                                        <span class="iconify" data-icon="ci:circle-check"></span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img4.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">lalalalisa_m</h6>
+                                            <div class="user__name-little">LISA🖤💗</div>
+                                        </div>
+                                        <span class="iconify" data-icon="ci:circle-check"></span>
+                                    </div>
+                                </div>
+
+                                <div class="user_hidden hidden">
+                                    <div class="user">
+                                        <img src="./assets/img/img5.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">bp_tiktok</h6>
+                                                <div class="user__name-little">LISA🖤💗</div>
+                                            </div>
+                                            <span class="iconify" data-icon="ci:circle-check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img6.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">Be strong</h6>
+                                                <div class="user__name-little">hi world</div>
+                                            </div>
+                                            <span class="iconify" data-icon="ci:circle-check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img7.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">Hello guys</h6>
+                                                <div class="user__name-little">Love u</div>
+                                            </div>
+                                            <span class="iconify" data-icon="ci:circle-check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="user__text-one">
+                                    See all
+                                </div>
+
+                            </div>
+
+
+                            <div class="accounts accounts--follow">
+                                <p>Following accounts</p>
+                                <div class="user">
+                                    <img src="./assets/img/img1.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">alicepham11</h6>
+                                            <div class="user__name-little">Alice Phạm(Jas)💛🌻</div>
+                                        </div>
+                                        <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img2.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">06082013krj</h6>
+                                            <div class="user__name-little">Hoài Thu (肖莫嫣)</div>
+                                        </div>
+                                        <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img8.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">twetamm</h6>
+                                            <div class="user__name-little">@Tâm sự xíu</div>
+                                        </div>
+                                        <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <img src="./assets/img/img7.jpg" alt="avatar">
+                                    <div class="user__name">
+                                        <div class="user__name--main">
+                                            <h6 class="user__name-bold">danh99999</h6>
+                                            <div class="user__name-little">Danh Nguyễn</div>
+                                        </div>
+                                        <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                    </div>
+                                </div>
+                                <div class="user_following-hidden hidden">
+                                    <div class="user">
+                                        <img src="./assets/img/img6.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">tuenghi.vn</h6>
+                                                <div class="user__name-little">Tue Nghi</div>
+                                            </div>
+                                            <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img5.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">hamytrinh99</h6>
+                                                <div class="user__name-little">IT meme</div>
+                                            </div>
+                                            <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img4.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">danfoolish.radio</h6>
+                                                <div class="user__name-little">Dan Foolish</div>
+                                            </div>
+                                            <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img4.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">danfoolish.radio</h6>
+                                                <div class="user__name-little">Dan Foolish</div>
+                                            </div>
+                                            <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="./assets/img/img4.jpg" alt="avatar">
+                                        <div class="user__name">
+                                            <div class="user__name--main">
+                                                <h6 class="user__name-bold">danfoolish.radio</h6>
+                                                <div class="user__name-little">Dan Foolish</div>
+                                            </div>
+                                            <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__text-two">See more</div>
+                            </div>
+
+                            <!-- music -->
+                            <div class="music">
+                                <p>Discover</p>
+                                <div class="music__container-tag">
+
+                                    <div class="music__container--both">
+                                        <div class="music__container">
+                                            <div class="iconify--tag">
+                                                <span class="iconify" data-icon="ic:outline-tag"></span>
+                                            </div>
+                                            <div class="music__text">mackedoi</div>
+                                        </div>
+
+
+                                        <div class="music__container">
+                                            <div class="iconify--tag">
+                                                <span class="iconify" data-icon="ic:outline-tag"></span>
+                                            </div>
+                                            <div class="music__text">sansangthaydoi</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="ic:outline-tag"></span>
+                                        </div>
+                                        <div class="music__text">7749hieuung</div>
+                                    </div>
+
+
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="bi:music-note-beamed"></span>
+                                        </div>
+                                        <div class="music__text">Yêu Đơn Phương Là Gì (MEE Remix)-Mee Remix</div>
+                                    </div>
+
+
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="bi:music-note-beamed"></span>
+                                        </div>
+                                        <div class="music__text">Về Nghe Mẹ Ru - NSND Bach Tuyet & Hứa Kim Tuyền & 14
+                                            & Hoàng D</div>
+                                    </div>
+
+
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="bi:music-note-beamed"></span>
+                                        </div>
+                                        <div class="music__text">Thiên Thần Tình Yêu - RICKY STAR</div>
+                                    </div>
+
+                                    <div class="music__container--both">
+                                        <div class="music__container">
+                                            <div class="iconify--tag">
+                                                <span class="iconify" data-icon="ic:outline-tag"></span>
+                                            </div>
+                                            <div class="music__text">genzlife</div>
+                                        </div>
+
+
+                                        <div class="music__container">
+                                            <div class="iconify--tag">
+                                                <span class="iconify" data-icon="ic:outline-tag"></span>
+                                            </div>
+                                            <div class="music__text">tiktoksoiphim</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="bi:music-note-beamed"></span>
+                                        </div>
+                                        <div class="music__text">Tình Đã Đầy Một Tim - Huyền Tâm Môn</div>
+                                    </div>
+
+                                    <div class="music__container">
+                                        <div class="iconify--tag">
+                                            <span class="iconify" data-icon="bi:music-note-beamed"></span>
+                                        </div>
+                                        <div class="music__text">Thằng Hầu(Thái Hoàng Remix)[Short Version]</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="footer">
+                                <div clas="footer__text">
+                                    <div class="footer__text--details footer__text--details-firts">
+                                        <a href="https://www.tiktok.com/about?lang=en">About</a>
+                                        <a href="https://www.tiktok.com/browse">TikTok Browse</a>
+                                        <a href="https://newsroom.tiktok.com/vi-vn/">Newsroom</a>
+                                        <a href="https://www.tiktok.com/about/contact?lang=en">Contact</a>
+                                        <a href="https://careers.tiktok.com/">Careers</a>
+                                        <a href="https://www.bytedance.com/">ByteDance</a>
+                                    </div>
+
+                                    <div class="footer__text--details">
+                                        <a href="https://www.tiktok.com/about?lang=en">TikTok for Good</a>
+                                        <a href="https://www.tiktok.com/browse">Advertlse</a>
+                                        <a href="https://newsroom.tiktok.com/vi-vn/">Developers</a>
+                                        <a href="https://www.tiktok.com/about/contact?lang=en">Transparency</a> <br>
+                                        <a href="https://www.bytedance.com/">TikTok Rewards</a>
+                                    </div>
+
+                                    <div class="footer__text--details">
+                                        <a href="https://www.tiktok.com/about?lang=en">Help</a>
+                                        <a href="https://www.tiktok.com/browse">Safety</a>
+                                        <a href="https://newsroom.tiktok.com/vi-vn/">Privacy</a>
+                                        <a href="https://www.tiktok.com/about/contact?lang=en">Creator Portal</a><br>
+                                        <a href="https://careers.tiktok.com/">Community Guldellnes</a>
+                                    </div>
+
+                                    <div class="footer__text--details">
+                                        <a href="https://www.tiktok.com/about?lang=en">©2022 TikTok</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                
-                
-    </nav>
-</header>
-<main> 
-<div>
-    <div class="container">
-        <div class="left">
-
-        <div class="btns">
-            <div class="btn__home btn-item active">
-                <span class="iconify" data-icon="ant-design:home-filled"></span>
-                <p class="btn__text">For you</p>
-            </div>
-
-            <div class="btn__follow btn-item">
-                <span class="iconify" data-icon="ic:round-supervisor-account"></span>
-                <p class="btn__text">Following</p>
-            </div>
-
-            <div class="btn__livestream btn-item">
-                <span class="iconify" data-icon="ph:video-camera-duotone"></span>
-                <p class="btn__text">LIVE</p>
-            </div>
-        </div>
-
-     <div class="accounts">
-            <p>Suggested accounts</p>
-        <div class="user">
-               <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-               <div class="user__name">
-                  <div class="user__name--main">
-                      <h6 class="user__name-bold">roses_are_rosie</h6> 
-                      <div class="user__name-little">ROSÉ</div>
-                  </div>
-                    <span class="iconify" data-icon="ci:circle-check"></span>
-                  </div>
-            </div>
 
 
-        <div class="user">
-              <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-              <div class="user__name">
-                 <div class="user__name--main">
-                     <h6 class="user__name-bold">sooyaaa__</h6> 
-                     <div class="user__name-little">JISOO🤍</div>
-                </div>
-                  <span class="iconify" data-icon="ci:circle-check"></span>
-                </div>
-           </div>
-
-       <div class="user">
-            <img src="https://i.pinimg.com/736x/8c/ec/e1/8cece10481442c85f7ebdcd1cb261f2e.jpg" alt="avatar">
-            <div class="user__name">
-              <div class="user__name--main">
-                 <h6 class="user__name-bold">jennierrubyjane</h6> 
-                 <div class="user__name-little">J</div>
-             </div>
-               <span class="iconify" data-icon="ci:circle-check"></span>
-             </div>
-         </div>
-
-       <div class="user">
-           <img src="https://cdnmedia.thethaovanhoa.vn/Upload/V04zufyce6GA7fkWadMYw/files/2019/11/li1.jpg" alt="avatar">
-           <div class="user__name">
-             <div class="user__name--main">
-                 <h6 class="user__name-bold">lalalalisa_m</h6> 
-                 <div class="user__name-little">LISA🖤💗</div>
-            </div>
-                <span class="iconify" data-icon="ci:circle-check"></span>
-            </div>
-       </div>
-
-       <div class="user">
-        <img src="https://upload.wikimedia.org/wikipedia/vi/4/45/Lovesick_Girls_Poster.jpeg" alt="avatar">
-        <div class="user__name">
-          <div class="user__name--main">
-             <h6 class="user__name-bold">bp_tiktok</h6> 
-             <div class="user__name-little">blackpinkoffical</div>
-         </div>
-           <span class="iconify" data-icon="ci:circle-check"></span>
-         </div>
-     </div>
-     <div class="user__text">
-        See all
-    </div>
-
-    </div>
- 
-
-    
-    <div class="accounts accounts--follow">
-        <p>Following accounts</p>
-        <div class="user">
-               <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-               <div class="user__name">
-                  <div class="user__name--main">
-                      <h6 class="user__name-bold">alicepham11</h6> 
-                      <div class="user__name-little">Alice Phạm(Jas)💛🌻</div>
-                  </div>
-                    <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                  </div>
-            </div>
-        <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">06082013krj</h6> 
-                       <div class="user__name-little">Hoài Thu (肖莫嫣)</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div>
-             <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">twetamm</h6> 
-                       <div class="user__name-little">@Tâm sự xíu</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div>
-             <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">danh99999</h6> 
-                       <div class="user__name-little">Danh Nguyễn</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div>
-             <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">tuenghi.vn</h6> 
-                       <div class="user__name-little">Tue Nghi</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div>
-             <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">hamytrinh99</h6> 
-                       <div class="user__name-little">IT meme</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div>
-             <div class="user">
-                <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                <div class="user__name">
-                   <div class="user__name--main">
-                       <h6 class="user__name-bold">danfoolish.radio</h6> 
-                       <div class="user__name-little">Dan Foolish</div>
-                   </div>
-                     <!-- <span class="iconify" data-icon="ci:circle-check"></span> -->
-                   </div>
-             </div> 
-             <div class="user__text">See more</div>
-            </div>
-           
-        <!-- music -->
-               <div class="music">
-                  <p>Discover</p>
-            <div class="music__container-tag">
-
-                <div class="music__container--both">
-                    <div class="music__container">
-                        <div class="iconify--tag">
-                            <span class="iconify" data-icon="ic:outline-tag"></span>
-                        </div>
-                        <div class="music__text">mackedoi</div>
+                    <!-- ------------------contain-left-------------------->
+                    <div class="right_content">
                     </div>
 
-
-                    <div class="music__container">
-                        <div class="iconify--tag">
-                            <span class="iconify" data-icon="ic:outline-tag"></span>
-                        </div>
-                        <div class="music__text">sansangthaydoi</div>
-                    </div>
-                </div>
-
-                
-              <div class="music__container">
-                  <div class="iconify--tag">
-                       <span class="iconify" data-icon="ic:outline-tag"></span>
-                  </div>
-                  <div class="music__text">7749hieuung</div>
-              </div>
-                  
-                
-                
-              <div class="music__container">
-                <div class="iconify--tag">
-                    <span class="iconify" data-icon="bi:music-note-beamed"></span>          
-                </div>
-                <div class="music__text">Yêu Đơn Phương Là Gì (MEE Remix)-Mee Remix</div>
-            </div>
-
-              
-               
-            <div class="music__container">
-                <div class="iconify--tag">
-                    <span class="iconify" data-icon="bi:music-note-beamed"></span>          
-                </div>
-                <div class="music__text">Về Nghe Mẹ Ru - NSND Bach Tuyet & Hứa Kim Tuyền & 14 Casper & Hoàng D</div>
-            </div>
-
-              
-               
-            <div class="music__container">
-                <div class="iconify--tag">
-                    <span class="iconify" data-icon="bi:music-note-beamed"></span>          
-                </div>
-                <div class="music__text">Thiên Thần Tình Yêu - RICKY STAR</div>
-            </div>
-
-            <div class="music__container--both">
-                <div class="music__container">
-                    <div class="iconify--tag">
-                        <span class="iconify" data-icon="ic:outline-tag"></span>
-                    </div>
-                    <div class="music__text">genzlife</div>
-                </div>
-
-
-                <div class="music__container">
-                    <div class="iconify--tag">
-                        <span class="iconify" data-icon="ic:outline-tag"></span>
-                    </div>
-                    <div class="music__text">tiktoksoiphim</div>
                 </div>
             </div>
 
-            <div class="music__container">
-                <div class="iconify--tag">
-                    <span class="iconify" data-icon="bi:music-note-beamed"></span>          
-                </div>
-                <div class="music__text">Tình Đã Đầy Một Tim - Huyền Tâm Môn</div>
-            </div>
+        </main>
 
-            <div class="music__container">
-                <div class="iconify--tag">
-                    <span class="iconify" data-icon="bi:music-note-beamed"></span>          
-                </div>
-                <div class="music__text">Thằng Hầu(Thái Hoàng Remix)[Short Version]</div>
-            </div>
-
-        </div> 
-            </div>
-
-            <div class="footer">
-                <div clas="footer__text">
-                   <div class="footer__text--details footer__text--details-firts">
-                    <a href="https://www.tiktok.com/about?lang=en">About</a>
-                    <a href="https://www.tiktok.com/browse">TikTok Browse</a>
-                    <a href="https://newsroom.tiktok.com/vi-vn/">Newsroom</a>
-                    <a href="https://www.tiktok.com/about/contact?lang=en">Contact</a>
-                    <a href="https://careers.tiktok.com/">Careers</a>
-                    <a href="https://www.bytedance.com/">ByteDance</a>
-                   </div>
-
-                   <div class="footer__text--details">
-                    <a href="https://www.tiktok.com/about?lang=en">TikTok for Good</a>
-                    <a href="https://www.tiktok.com/browse">Advertlse</a>
-                    <a href="https://newsroom.tiktok.com/vi-vn/">Developers</a>
-                    <a href="https://www.tiktok.com/about/contact?lang=en">Transparency</a> <br>                  
-                    <a href="https://www.bytedance.com/">TikTok Rewards</a>
-                   </div>
-
-                   <div class="footer__text--details">
-                    <a href="https://www.tiktok.com/about?lang=en">Help</a>
-                    <a href="https://www.tiktok.com/browse">Safety</a>
-                    <a href="https://newsroom.tiktok.com/vi-vn/">Privacy</a>
-                    <a href="https://www.tiktok.com/about/contact?lang=en">Creator Portal</a><br>
-                    <a href="https://careers.tiktok.com/">Community Guldellnes</a>
-                   </div>
-
-                   <div class="footer__text--details">
-                    <a href="https://www.tiktok.com/about?lang=en">©2022 TikTok</a>
-                   </div>
-                </div>
-            </div>
-    </div>
-
-       <div class="right"> 
-        <div class="right_content">
-<!-- ----------------------- -->
-<div class="user user--main">
-                <div class="user__info-img user__info-img--big">
-                    <img src="https://icon-library.com/images/angry-face-icon/angry-face-icon-13.jpg" alt="avatar">
-                </div>
-
-
-             <div class="content">
-           <div class="content__text">
-              <div class="content__text-name">
-
-                  <div class="content__text-name-author">bee_are_beeble</div>
-                  <div class="content__text-more">Bee_are_beeble</div>
-              </div>
-
-         <div class="user__info-short">
-            <div class="user__info-top">
-        
-                <div class="user__info-img">
-                     <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-                </div>
-           
-                <div class="btn-follow">
-                    <button class="content__btn">Follow</button>
-                </div>
-                
-            </div>
-        
-            <div class="user__info-between">
-                <div class="content__text-name-author">bee_are_beeble</div>
-                <div class="content__text-more">Bee_are_beeble</div>
-            </div>
-        
-            <div class="user__info-bottom">
-                <div class="user__info-follow">
-                    <p class="user__info-number">191.5K</p>
-                    <p class="user__info-text">Follower</p>
-                </div>
-        
-                <div class="user__info-follow">
-                    <p class="user__info-number">7.7M</p>
-                    <p class="user__info-text">Likes</p>
-                </div>
-        
-            </div>
-        
-            <div class="user__info-footer">
-                <p>LOVESICK GIRLS</p>
-            </div>
-        </div>
-             <div class="content__text-tag--one">
-                 <p>idol mình ở một đẳng cấp hoàn toàn khác 🤯</p>
-                 <div class="content__text-tag--name">
-                    <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc"> #blackpink </a>
-                    <!-- <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc"> #xuhuong </a> -->
-                    <!-- <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc"> #fyp</a> -->
-                </div>
-             </div>
-
-                 <!-- <div class="content__text-tag--two">
-                            <div class="content__text-tag--name">#xuhuong #fyp</div>
-                 </div> -->
-                        
-                 <div class="content__text-tag--three">
-                             <span class="iconify" data-icon="bi:music-note-beamed"></span>  
-                             <a href="https://www.tiktok.com/music/DDU-DU-DDU-DU--JP-Ver--6973892626206427138?is_from_webapp=1&sender_device=pc">
-                                nhạc nền - 𝑩𝒆𝒆_𝒂𝒓𝒆_𝑩𝒆𝒆𝒃𝒍𝒆 ♡ - Bee_are_Beeble ♡
-                             </a>   
-                  </div>                
-              
-
-                  
-                 </div>
-        <div class="content-video-btn">
-
-            <div class="content-video">
-                  
-                <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="https://www.tiktok.com/@kientaocuocsong10/video/7127959843163360539?is_from_webapp=1&sender_device=pc&web_id=7062918435496494594" loop></video>
-
-                  </div> 
-            <div class="content-btn">
-                <div class="content-btn--heart">
-                
-                    <!-- <div class="btn-icon btn-icon--heart"> -->
-                        <div class="fa-solid fa-heart"></div>
-                    <p class="number-heart">789</p>
-
-                </div>
-          
-
-                <div class="content-btn--comments">
-                
-                    <div class="btn-icon">
-                       <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-                    </div>
-                    <p>73</p>
-                </div>
-         
-
-
-                <div class="content-btn--share">
-
-                        <div class="btn-icon">
-                            <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-                        </div>
-                            <p>9000</p>
-
-                          <div class="content-arrow">
-                            <span class="iconify" data-icon="bxs:down-arrow"></span>
-                          </div> 
-
-
-                    <div class="content-btn--share-menu">
-
-                        <div class="content-btn--share-menu-show">
-                        <ul>
-                            <li class="item-text">
-                                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                                <p class="content-menu--text">Dip</p>
-                            </li>
-
-                            <li class="item-text">
-                                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                                <p class="content-menu--text">Send to friends</p>
-                            </li>
-
-                            <li class="item-text">
-                                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                                <p class="content-menu--text">Share with Facebook</p>
-                            </li>
-
-                            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                                <p class="content-menu--text">Share with WhatsApp</p>
-                            </li>
-
-                            <li class="item-text">
-                                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                                <p class="content-menu--text">Copy link</p>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="iconify--arrow">
-                        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-                    </div>
-                   
-                        <div class="content-btn--share-menu-hidden">
-                         <ul>
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                                <p class="content-menu--text">Share with Twitter</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                                <p class="content-menu--text">Share with LinkedIn</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                                <p class="content-menu--text">Share with Reddit</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                                <p class="content-menu--text">Share with Telegram</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="clarity:email-line"></span>
-                                <p class="content-menu--text">Share with Email</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                                <p class="content-menu--text">Share with Line</p>
-                            </li>
-
-                            <li class="item item-change">
-                                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                                <p class="content-menu--text">Share with Pinterest</p>
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-                    </div>
-<!-- div ở trên có thể xóa  -->
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-            
-             
-             
-             <div class="btn-follow">
-                 <button class="content__btn">Follow</button>
-             </div>
-
-   
-        </div>
-       
- <!-- ----------------- -->
- <div class="user user--main">
-        <div class="user__info-img user__info-img--big">
-            <img src="https://icon-library.com/images/angry-face-icon/angry-face-icon-13.jpg" alt="avatar">
-        </div>
-
-
-           <div class="content">
-         <div class="content__text">
-            <div class="content__text-name">
-
-                <div class="content__text-name-author">dangminh3101</div>
-                <div class="content__text-more">🍉Min Min🍉</div>
-       </div>
-       <div class="user__info-short">
-        <div class="user__info-top">
-    
-            <div class="user__info-img">
-                 <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-            </div>
-       
-            <div class="btn-follow">
-                <button class="content__btn">Follow</button>
-            </div>
-            
-        </div>
-    
-        <div class="user__info-between">
-            <div class="content__text-name-author">dangminh3101</div>
-            <div class="content__text-more">🍉Min Min🍉</div>
-        </div>
-    
-        <div class="user__info-bottom">
-            <div class="user__info-follow">
-                <p class="user__info-number">416.5K</p>
-                <p class="user__info-text">Follower</p>
-            </div>
-    
-            <div class="user__info-follow">
-                <p class="user__info-number">23.8M</p>
-                <p class="user__info-text">Likes</p>
-            </div>
-    
-        </div>
-    
-        <div class="user__info-footer">
-            <p>Booking qua zalo: 0.3.4.9.9.7.1.3.4.5 Mail: phamdangminh113@gmail.com</p>
-        </div>
-    </div>
-
-           <div class="content__text-tag--one">
-               <p>Remix xong như 1 bài khác luôn</p>
-               <div class="content__text-tag--name">
-                <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#fyp</a>
-                <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#story</a>
-                <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#stt</a>
-                <!-- <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#buôn</a> -->
-                <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#remix</a>
-            </div>
-           </div>
-
-               <!-- <div class="content__text-tag--two">
-                          <div class="content__text-tag--name"></div>
-               </div> -->
-                      
-               <div class="content__text-tag--three">
-                           <span class="iconify" data-icon="bi:music-note-beamed"></span> 
-                           <a href="https://www.tiktok.com/music/Thấm-Thía-Remix-7082250106976750362?is_from_webapp=1&sender_device=pc">
-                            nhạc nền - 🍉Min Min🍉
-                           </a>    
-                </div>                
-            
-
-                
-               </div>
-      <div class="content-video-btn">
-
-          <div class="content-video">
-            <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="video/vid001.mp4" loop></video>
-
-
-                </div>
-          <div class="content-btn">
-              <div class="content-btn--heart">
-            
-                <div class="fa-solid fa-heart"></div>
-                <p class="number-heart">350</p>
-
-                </div>
-
-
-              <div class="content-btn--comments">
-            
-                  <div class="btn-icon">
-                     <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-                  </div>
-                  <p>72</p>
-              </div>
-
-              <div class="content-btn--share">
-            
-                  <div class="btn-icon">
-                    <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-                  </div>
-                  <p>1200</p>
-
-                  <div class="content-arrow">
-                    <span class="iconify" data-icon="bxs:down-arrow"></span>
-                  </div> 
-
-
-            <div class="content-btn--share-menu">
-
-                <div class="content-btn--share-menu-show">
-                <ul>
-                    <li class="item-text">
-                        <span class="iconify" data-icon="ph:brackets-angle"></span>
-                        <p class="content-menu--text">Dip</p>
-                    </li>
-
-                    <li class="item-text">
-                        <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                        <p class="content-menu--text">Send to friends</p>
-                    </li>
-
-                    <li class="item-text">
-                        <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                        <p class="content-menu--text">Share with Facebook</p>
-                    </li>
-
-                    <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                        <p class="content-menu--text">Share with WhatsApp</p>
-                    </li>
-
-                    <li class="item-text">
-                        <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                        <p class="content-menu--text">Copy link</p>
-                    </li>
-                    
-                </ul>
-            </div>
-            
-            <div class="iconify--arrow">
-                <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-            </div>
-           
-                <div class="content-btn--share-menu-hidden">
-                 <ul>
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                        <p class="content-menu--text">Share with Twitter</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                        <p class="content-menu--text">Share with LinkedIn</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                        <p class="content-menu--text">Share with Reddit</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                        <p class="content-menu--text">Share with Telegram</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="clarity:email-line"></span>
-                        <p class="content-menu--text">Share with Email</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                        <p class="content-menu--text">Share with Line</p>
-                    </li>
-
-                    <li class="item item-change">
-                        <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                        <p class="content-menu--text">Share with Pinterest</p>
-                    </li>
-
-
-                </ul>
-            </div>
-                </div>
-          </div>
-      </div>
-          
-           
-    </div>
-
- </div>
-           
-           <div class="btn-follow">
-               <button class="content__btn">Follow</button>
-           </div>
-
-     </div>
-
-
- <!-- ----------------- -->
-
-
-              <div class="user user--main">
-                <div  class="user__info-img user__info-img--big">
-                    <img src="https://icon-library.com/images/angry-face-icon/angry-face-icon-13.jpg" alt="avatar">
-                </div>
-
-
-      <div class="content">
-    <div class="content__text">
-       <div class="content__text-name">
-
-           <div class="content__text-name-author">emilyta269</div>
-           <div class="content__text-more">emilyta</div>
-  </div>
-  <div class="user__info-short">
-    <div class="user__info-top">
-
-        <div class="user__info-img">
-             <img src="https://kenh14cdn.com/203336854389633024/2022/3/19/27615770731740691028740751602824240203434890n-1647708654578651984757.jpg" alt="avatar">
-        </div>
-   
-        <div class="btn-follow">
-            <button class="content__btn">Follow</button>
-        </div>
-        
-    </div>
-
-    <div class="user__info-between">
-        <div class="content__text-name-author">emilyta269</div>
-        <div class="content__text-more">emilyta</div>
-    </div>
-
-    <div class="user__info-bottom">
-        <div class="user__info-follow">
-            <p class="user__info-number">10.5K</p>
-            <p class="user__info-text">Follower</p>
-        </div>
-
-        <div class="user__info-follow">
-            <p class="user__info-number">888.7K</p>
-            <p class="user__info-text">Likes</p>
-        </div>
 
     </div>
 
-    <div class="user__info-footer">
-        <p>Thích gì đăng nấy Không like nhiều video một lượt nhé 🙏 ❌SPAM LIKE=BLOCK❌</p>
-    </div>
-</div>
 
-      <div class="content__text-tag--one">
-        <p>So cuteeeeeeee</p>
-        <div class="content__text-tag--name">
-            <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#extraordinaryattorneywoo</a>
-        </div>
-      </div> 
 
-           <!-- <div class="content__text-tag--two">
-                     <div class="content__text-tag--name">#xuhuong #fyp</div>
-          </div>  -->
-                 
-           <div class="content__text-tag--three">
-                      <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                      <a href="https://www.tiktok.com/music/Energy-Music-Vol-4DVT-7102398923515841307?is_from_webapp=1&sender_device=pc">
-                        original sound - Gracie's Corner
-                      </a>
-           </div>                
-       
-
-           
-          </div>
- <div class="content-video-btn">
-
-     <div class="content-video">
-
-    <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="video/vid001.mp4" loop></video>
-
-
-           </div>
-     <div class="content-btn">
-         <div class="content-btn--heart">
-            
-            <div class="fa-solid fa-heart"></div>
-            <p class="number-heart">450</p>
-
-            </div>
-
-
-         <div class="content-btn--comments">
-        
-             <div class="btn-icon">
-                <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-             </div>
-             <p>106</p>
-         </div>
-
-         <div class="content-btn--share">
-        
-             <div class="btn-icon">
-               <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-             </div>
-             <p>281</p>
-
-             <div class="content-arrow">
-                <span class="iconify" data-icon="bxs:down-arrow"></span>
-              </div> 
-
-
-        <div class="content-btn--share-menu">
-
-            <div class="content-btn--share-menu-show">
-            <ul>
-                <li class="item-text">
-                    <span class="iconify" data-icon="ph:brackets-angle"></span>
-                    <p class="content-menu--text">Dip</p>
-                </li>
-
-                <li class="item-text">
-                    <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                    <p class="content-menu--text">Send to friends</p>
-                </li>
-
-                <li class="item-text">
-                    <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                    <p class="content-menu--text">Share with Facebook</p>
-                </li>
-
-                <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                    <p class="content-menu--text">Share with WhatsApp</p>
-                </li>
-
-                <li class="item-text">
-                    <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                    <p class="content-menu--text">Copy link</p>
-                </li>
-                
-            </ul>
-        </div>
-        
-        <div class="iconify--arrow">
-            <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-        </div>
-       
-            <div class="content-btn--share-menu-hidden">
-             <ul>
-                <li class="item item-change">
-                    <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                    <p class="content-menu--text">Share with Twitter</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                    <p class="content-menu--text">Share with LinkedIn</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                    <p class="content-menu--text">Share with Reddit</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                    <p class="content-menu--text">Share with Telegram</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="clarity:email-line"></span>
-                    <p class="content-menu--text">Share with Email</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                    <p class="content-menu--text">Share with Line</p>
-                </li>
-
-                <li class="item item-change">
-                    <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                    <p class="content-menu--text">Share with Pinterest</p>
-                </li>
-
-
-            </ul>
-        </div>
-         </div>
-     </div>
- </div> 
-     
-</div>
-
-      </div>
-      
-      <div class="btn-follow">
-          <button class="content__btn">Follow</button>
-      </div>
-
-        </div>  
- <!-- ----------------- -->
-
-<!-- ----------------------------- -->
-            <!-- <div class="user">
-    <img src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/80e541c00ba830f3b2a52b0d82341102~c5_100x100.jpeg?x-expires=1656219600&x-signature=4%2FHvwtZR%2BY2dCsTl%2B1q7WwHikcA%3D" alt="avatar">
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">idolchaybo</div>
-       <div class="content__text-more">Iron Girl Thanh Bùi</div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>Nếu bạn không sinh ra ở vạch đích thì sao?</p>
-       <div class="content__text-tag--name">
-           <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#irongirl</a>
-           <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">#idolchaybo</a>
-       </div>
-  </div> 
-
-      
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>  
-                  <a href="https://www.tiktok.com/music/nhạc-nền-Iron-Girl-Thanh-Bùi-7110975865483840282?is_from_webapp=1&sender_device=pc">
-                    nhạc nền - Iron Girl Thanh Bùi
-                  </a>   
-       </div>                
-   
-
-       
-      </div>
-<div class="content-video-btn">
-
- <div class="content-video">
-           <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate">
-                 <source src="assets/vid5.mp4" type="video/mp4">
-           </video>
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-    
-         <div class="btn-icon btn-icon--heart">
-             <span class="iconify" data-icon="ant-design:heart-filled"></span>
-         </div>
-         <p>41.9k</p>
-     </div>
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>708</p>
-     </div>
-
-     <div class="content-btn--share">
-    
-         <div class="btn-icon">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-         </div>
-         <p>212</p>
-     </div>
- </div>
-</div>
- 
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-        </div>  -->
-<!-- ---------------- -->
-
-           <div class="user user--main">
-
-            <div class="user__info-img user__info-img--big">
-                <img src="https://icon-library.com/images/angry-face-icon/angry-face-icon-13.jpg" alt="avatar">
-            </div>
-
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">orinn090998</div>
-       <div class="content__text-more">Orinn 🌿(秋香）</div>
-</div>
-
-<div class="user__info-short">
-    <div class="user__info-top">
-
-        <div class="user__info-img user">
-             <img src="https://icon-library.com/images/angry-face-icon/angry-face-icon-13.jpg" alt="avatar">
-        </div>
-   
-        <div class="btn-follow">
-            <button class="content__btn">Follow</button>
-        </div>
-        
-    </div>
-
-    <div class="user__info-between">
-        <div class="content__text-name-author">orinn090998</div>
-        <div class="content__text-more">Orinn 🌿(秋香）</div>
-    </div>
-
-    <div class="user__info-bottom">
-        <div class="user__info-follow">
-            <p class="user__info-number">172k</p>
-            <p class="user__info-text">Follower</p>
-        </div>
-
-        <div class="user__info-follow">
-            <p class="user__info-number">6.1M</p>
-            <p class="user__info-text">Likes</p>
-        </div>
-
-    </div>
-
-    <div class="user__info-footer">
-        <p>不怕有己来得晚，只要我们没错过🍀</p>
-    </div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>🙄</p>
-      <div class="content__text-tag--name">
-       <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">
-       
-       </a> 
-     </div>
-  </div>
-
-      <!-- <div class="content__text-tag--two">
-                 <div class="content__text-tag--name">#xuhuong #fyp</div>
-      </div> -->
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                  <a href="https://www.tiktok.com/music/Love-Yourself-Drill-Remix-7064884950239070977?is_from_webapp=1&sender_device=pc">
-                    Luv Letters - frad
-                  </a>
-       </div>                
-   
-
-       
-      </div>
-<div class="content-video-btn">
-
- <div class="content-video">
-    <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="video/vid001.mp4" loop></video>
-
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-    
-            <div class="fa-solid fa-heart"></div>
-            <p id="1" value="0" class="number-heart">5000</p>
-     </div>
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>3508</p>
-     </div>
-
-     <div class="content-btn--share">
-    
-         <div class="btn-icon">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-         </div>
-         <p>6969</p>
-
-         <div class="content-arrow">
-            <span class="iconify" data-icon="bxs:down-arrow"></span>
-          </div> 
-
-
-    <div class="content-btn--share-menu">
-
-        <div class="content-btn--share-menu-show">
-        <ul>
-            <li class="item-text">
-                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                <p class="content-menu--text">Dip</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                <p class="content-menu--text">Send to friends</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Facebook</p>
-            </li>
-
-            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                <p class="content-menu--text">Share with WhatsApp</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                <p class="content-menu--text">Copy link</p>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <div class="iconify--arrow">
-        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-    </div>
-   
-        <div class="content-btn--share-menu-hidden">
-         <ul>
-            <li class="item item-change">
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Twitter</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                <p class="content-menu--text">Share with LinkedIn</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                <p class="content-menu--text">Share with Reddit</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                <p class="content-menu--text">Share with Telegram</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="clarity:email-line"></span>
-                <p class="content-menu--text">Share with Email</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                <p class="content-menu--text">Share with Line</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                <p class="content-menu--text">Share with Pinterest</p>
-            </li>
-
-
-        </ul>
-    </div>
- </div>
- </div>
-</div>
- 
-</div>
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-       </div>
-
-<!-- ------------ -->
-          <div class="user user--main">
-
-            <div class="user__info-img user__info-img--big">
-                <img src="https://www.mymypic.net/data/attachment/forum/202106/16/163227ocz2y4ajuad2mpau.jpg" alt="avatar">
-            </div>
-
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">engfa32</div>
-       <div class="content__text-more">ENGFA</div>
-</div>
-
-<div class="user__info-short">
-    <div class="user__info-top">
-
-        <div class="user__info-img">
-             <img src="https://www.mymypic.net/data/attachment/forum/202106/16/163227ocz2y4ajuad2mpau.jpg" alt="avatar">
-        </div>
-   
-        <div class="btn-follow">
-            <button class="content__btn">Follow</button>
-        </div>
-        
-    </div>
-
-    <div class="user__info-between">
-        <div class="content__text-name-author">engfa32</div>
-        <div class="content__text-more">ENGFA</div>
-    </div>
-
-    <div class="user__info-bottom">
-        <div class="user__info-follow">
-            <p class="user__info-number">2.9M</p>
-            <p class="user__info-text">Follower</p>
-        </div>
-
-        <div class="user__info-follow">
-            <p class="user__info-number">53M</p>
-            <p class="user__info-text">Likes</p>
-        </div>
-
-    </div>
-
-    <div class="user__info-footer">
-        <p>Miss Grand Thailand 2022🇹🇭 หมอทำขวัญนาค ติดต่องานผจก 0988419789 IG : Fa_engf</p>
-    </div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>เสกทั้งวันล่ะ ชอบเหอะ 🙈❤️</p>
-      <div class="content__text-tag--name">
-        <a href="https://www.tiktok.com/tag/xuhuong2022?is_from_webapp=1&sender_device=pc">
-            #หงษ์ทองลอตเตอรี่
-        </a>
-    </div>
-  </div>
-
-      <!-- <div class="content__text-tag--two">
-                 <div class="content__text-tag--name">#xuhuong #fyp</div>
-      </div> -->
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                  <a href="https://www.tiktok.com/music/Tình-KaLofi-ver-7041883041370753793?is_from_webapp=1&sender_device=pc">
-                    เฮอร์ไมโอน้อง dance ver. - thechanisara
-                  </a>
-                     
-       </div>                
-   
-
-       
-      </div>
-<div class="content-video-btn">
-
- <div class="content-video">
-
-    <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="video/vid001.mp4" loop></video>
-
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-        <div class="fa-solid fa-heart"></div>
-        <p class="number-heart">3000</p>
-     </div>
-  
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>2711</p>
-     </div>
-
-
-     <div class="content-btn--share">
-    
-         <div class="btn-icon">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-         </div>
-         <p>10k</p>
-
-         <div class="content-arrow">
-            <span class="iconify" data-icon="bxs:down-arrow"></span>
-          </div> 
-
-
-    <div class="content-btn--share-menu">
-
-        <div class="content-btn--share-menu-show">
-        <ul>
-            <li class="item-text">
-                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                <p class="content-menu--text">Dip</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                <p class="content-menu--text">Send to friends</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Facebook</p>
-            </li>
-
-            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                <p class="content-menu--text">Share with WhatsApp</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                <p class="content-menu--text">Copy link</p>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <div class="iconify--arrow">
-        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-    </div>
-   
-        <div class="content-btn--share-menu-hidden">
-         <ul>
-            <li class="item item-change">
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Twitter</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                <p class="content-menu--text">Share with LinkedIn</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                <p class="content-menu--text">Share with Reddit</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                <p class="content-menu--text">Share with Telegram</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="clarity:email-line"></span>
-                <p class="content-menu--text">Share with Email</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                <p class="content-menu--text">Share with Line</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                <p class="content-menu--text">Share with Pinterest</p>
-            </li>
-
-
-        </ul>
-    </div>
-     </div>
- 
- </div>
-</div>
-</div>
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-     </div>
-<!-- ------------ -->
-
-
-          <div class="user user--main">
-            <div class="user__info-img user__info-img--big">
-                <img src="https://upload.wikimedia.org/wikipedia/vi/4/45/Lovesick_Girls_Poster.jpeg" alt="avatar">
-            </div> 
-
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">dinomango0206</div>
-       <div class="content__text-more">ⒺⓃ</div>
-  </div>
-
-<div class="user__info-short">
-    <div class="user__info-top">
-
-        <div class="user__info-img">
-             <img src="https://upload.wikimedia.org/wikipedia/vi/4/45/Lovesick_Girls_Poster.jpeg" alt="avatar">
-        </div>
-   
-        <div class="btn-follow">
-            <button class="content__btn">Follow</button>
-        </div>
-        
-    </div>
-
-    <div class="user__info-between">
-        <div class="content__text-name-author">dinomango0206</div>
-        <div class="content__text-more">ⒺⓃ</div>
-    </div>
-
-    <div class="user__info-bottom">
-        <div class="user__info-follow">
-            <p class="user__info-number">91.5K</p>
-            <p class="user__info-text">Follower</p>
-        </div>
-
-        <div class="user__info-follow">
-            <p class="user__info-number">8.8M</p>
-            <p class="user__info-text">Likes</p>
-        </div>
-
-    </div>
-
-    <div class="user__info-footer">
-        <p>Follow me to know watches more funny video</p>
-    </div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>Tay hư nha Li:))</p>
-    <div class="content__text-tag--name">
-        <a href="https://www.tiktok.com/tag/m%C3%ACnhl%C3%A0v%E1%BB%ABng?is_from_webapp=1&sender_device=pc">#blackpink</a>
-        <a href="https://www.tiktok.com/tag/m%C3%ACnhl%C3%A0v%E1%BB%ABng?is_from_webapp=1&sender_device=pc">#chaelisa</a>
- 
-   </div>
-  </div>
-
-      <!-- <div class="content__text-tag--two">
-                 <div class="content__text-tag--name">#xuhuong #fyp</div>
-      </div> -->
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                  <a href="https://www.tiktok.com/music/nhạc-nền-Hiếu-Editor-7018130059173153563?is_from_webapp=1&sender_device=pc">
-                    nhạc nền - ⒺⓃ🐰🐻🐿️🐥
-                  </a>     
-       </div>                
-   
-
-       
-      </div>
-
-
-<div class="content-video-btn">
-
- <div class="content-video">
-    
-       <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate" src="video/vid001.mp4" loop></video>
-
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-    
-        <div class="fa-solid fa-heart"></div>
-        <p class="number-heart">780</p>
-
-     </div>
-
-
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>210</p>
-     </div>
-
-
-     <div class="content-btn--share">
-
-         <div class="btn-icon btn-icon--share">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-        </div>
-        <p>5k</p>
-
-         <div class="content-arrow">
-            <span class="iconify" data-icon="bxs:down-arrow"></span>
-          </div> 
-
-
-    <div class="content-btn--share-menu">
-
-        <div class="content-btn--share-menu-show">
-        <ul>
-            <li class="item-text">
-                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                <p class="content-menu--text">Dip</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                <p class="content-menu--text">Send to friends</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Facebook</p>
-            </li>
-
-            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                <p class="content-menu--text">Share with WhatsApp</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                <p class="content-menu--text">Copy link</p>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <div class="iconify--arrow">
-        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-    </div>
-   
-        <div class="content-btn--share-menu-hidden">
-         <ul>
-            <li class="item item-change">
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Twitter</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                <p class="content-menu--text">Share with LinkedIn</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                <p class="content-menu--text">Share with Reddit</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                <p class="content-menu--text">Share with Telegram</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="clarity:email-line"></span>
-                <p class="content-menu--text">Share with Email</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                <p class="content-menu--text">Share with Line</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                <p class="content-menu--text">Share with Pinterest</p>
-            </li>
-
-
-        </ul>
-    </div>
-    </div>
-     </div>
-
- </div>
-</div>
- 
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-    </div>
-
-<!-- ------------ -->
-
-
-          <!-- <div class="user">
-    <img src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/bb04d4eac59750d83f5ce2a527230c58~c5_100x100.jpeg?x-expires=1656226800&x-signature=E4YxL3Duw2VpC71PZ4%2Bn7A7t8aE%3D" alt="avatar">
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">trangle.eii</div>
-       <div class="content__text-more">Trang Lê Eii !</div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>Đổi nền cuộc gọi trên đt cực xinh 🧚🏻‍♂️</p>
-      <div class="content__text-tag--name">
-        <a href="https://www.tiktok.com/tag/m%C3%ACnhl%C3%A0v%E1%BB%ABng?is_from_webapp=1&sender_device=pc">#learnontiktok</a>
-        <a href="https://www.tiktok.com/tag/m%C3%ACnhl%C3%A0v%E1%BB%ABng?is_from_webapp=1&sender_device=pc">#thanhcongnghe</a>
-        </div>
-  </div>
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                  <a href="https://www.tiktok.com/music/nhạc-nền-Lê-Bảo-Bình-7045852005562174210?is_from_webapp=1&sender_device=pc">nhạc nền - Lê Bảo Bình</a>     
-       </div>                
-   
-
-       
-      </div>
-<div class="content-video-btn">
-
- <div class="content-video">
-           <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate">
-                 <source src="assets/vid8.mp4" type="video/mp4">
-           </video>
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-    
-         <div class="btn-icon btn-icon--heart">
-             <span class="iconify" data-icon="ant-design:heart-filled"></span>
-         </div>
-         <p>99.2k</p>
-     </div>
-  
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>10.5k</p>
-     </div>
-
-
-     <div class="content-btn--share">
-    
-         <div class="btn-icon">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-         </div>
-         <p>9.8k</p>
-
-         <div class="content-arrow">
-            <span class="iconify" data-icon="bxs:down-arrow"></span>
-          </div> 
-
-
-    <div class="content-btn--share-menu">
-
-        <div class="content-btn--share-menu-show">
-        <ul>
-            <li class="item-text">
-                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                <p class="content-menu--text">Dip</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                <p class="content-menu--text">Send to friends</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Facebook</p>
-            </li>
-
-            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                <p class="content-menu--text">Share with WhatsApp</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                <p class="content-menu--text">Copy link</p>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <div class="iconify--arrow">
-        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-    </div>
-   
-        <div class="content-btn--share-menu-hidden">
-         <ul>
-            <li class="item item-change">
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Twitter</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                <p class="content-menu--text">Share with LinkedIn</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                <p class="content-menu--text">Share with Reddit</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                <p class="content-menu--text">Share with Telegram</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="clarity:email-line"></span>
-                <p class="content-menu--text">Share with Email</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                <p class="content-menu--text">Share with Line</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                <p class="content-menu--text">Share with Pinterest</p>
-            </li>
-
-
-        </ul>
-    </div>
-    </div>
- </div>
- </div>
-</div>
- 
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-    </div> -->
-
-<!-- ------------ -->
-
-
-           <!-- <div class="user">
-    <img src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/4b0ec169b519b285f3f7dd9a54493a26~c5_100x100.jpeg?x-expires=1656226800&x-signature=9iZg75aeqH8DB%2Fbbo2RTxCG2WJk%3D" alt="avatar">
-
-  <div class="content">
-<div class="content__text">
-   <div class="content__text-name">
-
-       <div class="content__text-name-author">bpts_ygstan</div>
-       <div class="content__text-more">BLACKPINK</div>
-</div>
-
-  <div class="content__text-tag--one">
-      <p>Audio edit by me</p>
-      <div class="content__text-tag--name">
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#blackpink</a>
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#jisoo</a>
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#jennie</a>
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#rosé</a>
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#lisa</a>
-        <a href="https://www.tiktok.com/tag/blackpink?is_from_webapp=1&sender_device=pc">#prettygirl</a>
-    
-    </div>
-  </div>
-             
-      <div class="content__text-tag--three">
-                  <span class="iconify" data-icon="bi:music-note-beamed"></span>     
-                  <a href="https://www.tiktok.com/music/bp-in-your-area-7079998309267475227?is_from_webapp=1&sender_device=pc">bp in your area - 𝖌𝖎𝖆𝖓</a>     
-       </div>                
-   
-
-      </div>
-<div class="content-video-btn">
-
- <div class="content-video">
-           <video autoplay muted controls loop disablepictureinpicture controlslist="nodownload noplaybackrate">
-                 <source src="assets/vid10.mp4" type="video/mp4">
-           </video>
-
-       </div>
- <div class="content-btn">
-     <div class="content-btn--heart">
-    
-         <div class="btn-icon btn-icon--heart">
-             <span class="iconify" data-icon="ant-design:heart-filled"></span>
-         </div>
-         <p>2.4M</p>
-     </div>
-   
-
-
-     <div class="content-btn--comments">
-    
-         <div class="btn-icon">
-            <span class="iconify" data-icon="fa6-solid:comment-dots"></span>
-         </div>
-         <p>20.6k</p>
-     </div>
-   
-
-     <div class="content-btn--share">
-    
-         <div class="btn-icon">
-           <span class="iconify" data-icon="icon-park-solid:share-two"></span>
-         </div>
-         <p>30.1k</p>
-
-         <div class="content-arrow">
-            <span class="iconify" data-icon="bxs:down-arrow"></span>
-          </div> 
-
-
-    <div class="content-btn--share-menu">
-
-        <div class="content-btn--share-menu-show">
-        <ul>
-            <li class="item-text">
-                <span class="iconify" data-icon="ph:brackets-angle"></span>
-                <p class="content-menu--text">Dip</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="mdi:send-circle-outline" style="color: red;"></span>
-                <p class="content-menu--text">Send to friends</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Facebook</p>
-            </li>
-
-            <li class="item-text"><span class="iconify" data-icon="ic:twotone-whatsapp" style="color: rgba(112, 239, 39, 0.92);"></span>
-                <p class="content-menu--text">Share with WhatsApp</p>
-            </li>
-
-            <li class="item-text">
-                <span class="iconify" data-icon="icon-park-outline:copy-link" style="color: red;"></span>
-                <p class="content-menu--text">Copy link</p>
-            </li>
-            
-        </ul>
-    </div>
-    
-    <div class="iconify--arrow">
-        <span class="iconify iconify--arrow-btn" data-icon="dashicons:arrow-down-alt2"></span>
-    </div>
-   
-        <div class="content-btn--share-menu-hidden">
-         <ul>
-            <li class="item item-change">
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: blue;"></span>
-                <p class="content-menu--text">Share with Twitter</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;"></span>
-                <p class="content-menu--text">Share with LinkedIn</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:reddit-fill" style="color: orange;"></span>
-                <p class="content-menu--text">Share with Reddit</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="fontisto:telegram" style="color: rgba(60, 196, 226, 0.3);"></span>
-                <p class="content-menu--text">Share with Telegram</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="clarity:email-line"></span>
-                <p class="content-menu--text">Share with Email</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="cib:line" style="color: green;"></span>       
-                <p class="content-menu--text">Share with Line</p>
-            </li>
-
-            <li class="item item-change">
-                <span class="iconify" data-icon="akar-icons:pinterest-fill" style="color: red;"></span>
-                <p class="content-menu--text">Share with Pinterest</p>
-            </li>
-
-
-        </ul>
-    </div>
-    </div>
-     </div>
- </div>
-</div>
- 
-  
-  </div>
-  
-  <div class="btn-follow">
-      <button class="content__btn">Follow</button>
-  </div>
-
-    </div> -->
- 
-<!-- <div class="content__text-tag--two">
-                 <div class="content__text-tag--name">#blink</div>
-      </div>  -->
-
-          </div>            
-     </div>
-     
-    </div>
-
-</main>        
-    
-
-</div>
-
-
-
-    <script src="main.js"></script>
+    <script src="right.js"></script>
+    <script src="left.js"></script>
 </body>
+
 </html>

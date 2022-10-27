@@ -1,0 +1,17 @@
+@media only screen and (max-width: 46.1875em) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .left_content {
+        display: none;
+    }
+    .right_content{
+        height: 2px;
+    }
+}
