@@ -114,7 +114,7 @@ const app = {
             video: './assets/video/vid6.mp4',
             button: 'Follow',
             classname: 'user__info-img user__info-img--big user__info-img--big-six',
-            heart: '12.5k',
+            heart: '1266',
             comments: '5k',
             share: '2.5k',
             follow: '1.8M',
