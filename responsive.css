@@ -1,4 +1,10 @@
 @media (max-width: 46.1875em) {
+
+    #app {
+        width: auto;
+        height: auto;
+    }
+
     .navbar {
         display: none;
     }
@@ -9,7 +15,7 @@
 
     .container {
         margin-top: unset;
-        width: 608px;
+        width: 616px;
         margin-left: -14.2em;
     }
 
@@ -21,18 +27,22 @@
         position: relative;
         bottom: 1.45em;
         left: 12em;
-        width: fit-content;
-        height: 64em;
+        width: 100%;
+        height: 97em;
+    }
+
+    .right_content::-webkit-scrollbar {
+        display: none;
     }
 
     .right_content .user {
-        height: 78%;
+        height: 73%;
     }
 
     .user__info-img--big>img {
         position: relative;
-        top: 12.5em;
-        left: 18em;
+        top: 33.5em;
+        left: 28em;
         z-index: 1000;
     }
 
@@ -43,11 +53,19 @@
     .content__text {
         position: relative;
         color: #fff;
-        top: 27em;
+        top: 50em;
         right: 7rem;
         z-index: 1000;
         width: 60%;
     }
+
+    /* .content__text-more {
+        font-size: 2em;
+    }
+
+    .content__text p {
+        font-size: 1.5em;
+    } */
 
     .content__text-name-author {
         display: none;
@@ -69,16 +87,17 @@
     }
 
     .content-video>video {
-        width: 72%;
-        height: 780px;
+        width: 100%;
+        height: 98%;
         border-radius: unset;
     }
 
     .content-btn {
         position: relative;
         color: #fff;
-        left: -22em;
-        top: 13em;
+        left: -12em;
+        top: 33em;
+
     }
 
     .content-btn--heart p,
@@ -94,14 +113,22 @@
     .footer {
         position: fixed;
         display: flex;
-        width: 26em;
+        width: 36em;
         background: red;
-        height: 3em;
-        margin-top: -21em;
+        height: 6em;
+        margin-top: -38em;
         z-index: 1000;
     }
-    ul{
+
+    ul {
         display: flex;
+        list-style-type: none;
+        font-size: 3em;
+        align-items: center;
+    }
+
+    li {
+        margin: 0 0.7em;
     }
 
     .user .content::after {
