@@ -1,5 +1,13 @@
 @media (max-width: 46.1875em) {
 
+    html {
+        height: -webkit-fill-available;
+    }
+
+    body {
+        height: -webkit-fill-available;
+    }
+
     #app {
         width: auto;
         height: auto;
@@ -59,7 +67,7 @@
         width: 60%;
     }
 
-   
+
 
     .content__text-name-author {
         display: none;

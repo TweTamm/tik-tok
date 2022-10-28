@@ -4,6 +4,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+html{
+    height: -webkit-fill-available;
+}
+
 body {
     font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
     height: 100vw;
@@ -13,6 +18,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     overflow: hidden;
+    height: -webkit-fill-available;
 }
 #app{
     width: 1536px;
