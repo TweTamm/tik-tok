@@ -1,7 +1,10 @@
+.right{
+    display: flex;
+}
 .right_content{
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 40rem;
+    height: 58rem;
     position: relative;
     width: 68%;
     left: 5.8rem;
@@ -25,7 +28,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    height: 100%;
+    height: 70%;
     width: 70%;
     cursor: auto;
 }
@@ -404,7 +407,7 @@ video::-webkit-media-controls-time-remaining-display {
     z-index: 1000;
     position: absolute;
     width: 320px;
-    height: 243;
+    height: 243px;
     box-sizing: border-box;
     padding: 20px;
     background: rgb(255, 255, 255);
@@ -500,3 +503,4 @@ video::-webkit-media-controls-time-remaining-display {
 .content-btn--share p {
     user-select: none;
 }
+

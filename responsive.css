@@ -1,0 +1,110 @@
+@media (max-width: 46.1875em) {
+    .navbar {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .container {
+        margin-top: unset;
+        width: 608px;
+        margin-left: -14.2em;
+    }
+
+    .left_content {
+        display: none;
+    }
+
+    .right_content {
+        position: relative;
+        bottom: 1.45em;
+        left: 12em;
+        width: fit-content;
+        height: 64em;
+    }
+
+    .right_content .user {
+        height: 78%;
+    }
+
+    .user__info-img--big>img {
+        position: relative;
+        top: 12.5em;
+        left: 18em;
+        z-index: 1000;
+    }
+
+    .user__info-short {
+        display: none;
+    }
+
+    .content__text {
+        position: relative;
+        color: #fff;
+        top: 27em;
+        right: 7rem;
+        z-index: 1000;
+        width: 60%;
+    }
+
+    .content__text-name-author {
+        display: none;
+    }
+
+    .content__text-tag--name a {
+        display: none;
+    }
+
+    .content__text-tag--three a {
+        display: none;
+    }
+
+    .content-video {
+        left: -7.55em;
+        bottom: 6.6em;
+        position: relative;
+        margin-left: unset;
+    }
+
+    .content-video>video {
+        width: 72%;
+        height: 780px;
+        border-radius: unset;
+    }
+
+    .content-btn {
+        position: relative;
+        color: #fff;
+        left: -22em;
+        top: 13em;
+    }
+
+    .content-btn--heart p,
+    .content-btn--comments p,
+    .content-btn--share p {
+        color: #fff;
+    }
+
+    .content-arrow {
+        display: none;
+    }
+
+    .footer {
+        position: fixed;
+        display: flex;
+        width: 26em;
+        background: red;
+        height: 3em;
+        margin-top: -21em;
+        z-index: 1000;
+    }
+    ul{
+        display: flex;
+    }
+
+    .user .content::after {
+        display: none;
+    }
+}

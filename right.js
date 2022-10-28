@@ -347,7 +347,9 @@ const app = {
             <div class="btn-follow">
                 <button class="content__btn-right">${video.button}</button>
             </div>
+
 </div>
+
 </div>
 
         
