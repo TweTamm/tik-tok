@@ -1,4 +1,4 @@
-@media (max-width: 46.1875em) {
+/* @media (max-width: 46.1875em) {
 
     html {
         height: -webkit-fill-available;
@@ -136,4 +136,48 @@
     .user .content::after {
         display: none;
     }
+} */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar__search {
+        display: none;
+    }
 }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .left_content {
+        border-right: 1px solid;
+        width: 5em;
+        position: inherit
+    }
+
+    .contents .btns {
+        margin-left: 7px;
+    }
+
+    .btn__text {
+        display: none;
+    }
+
+    .accounts p,
+    h6,
+    .user__name,
+    .user__text-one,
+    .user__text-two {
+        display: none;
+    }
+
+    .left_content p,
+    .music__container-tag {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}

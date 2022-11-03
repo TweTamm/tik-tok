@@ -19,17 +19,13 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 4.2rem;
+    margin: 0 2.8rem;
 }
 
 .navbar .iconify-logo {
     font-size: 35px;
-    margin-left: 4rem;
 }
 
-.navbar__search {
-    position: relative;
-    right: 20px;
-}
 
 .navbar__input {
     padding-top: 12px;
@@ -93,22 +89,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15rem;
-}
+    width: 290px;
+    height: 65px;
+} 
 
 .navbar__upload--border {
     position: relative;
-    right: 2rem;
-    border: 1px solid rgba(22, 24, 35, 0.12);
-    border-radius: 2px;
-    min-width: 110px;
-    padding: 0 8px;
-    height: 36px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+
 }
 
+.navbar__upload--btn {
+    border-radius: 2px;
+    min-width: 110px;
+    padding: 0.6em 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 .navbar__upload--btn .navbar__upload--text {
     margin-left: 0.5rem;
 }
@@ -121,12 +121,6 @@ header {
     background-color: rgba(22, 24, 35, 0.03);
 }
 
-.navbar__upload--btn {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
 .iconify--plus {
     height: 20px;
     width: 20px;
@@ -136,25 +130,11 @@ header {
     top: 1px;
 }
 
-.navbar__upload {
-    margin-left: 0;
-    position: relative;
-    height: 36px;
-}
-
 .navbar__upload--text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #161823;
-}
-
-.navbar__send .iconify {
-    cursor: pointer;
-    font-size: 24px;
-    margin: 0 15px;
-    position: relative;
-    right: 1.8rem;
 }
 
 .navbar__message--menu {
@@ -318,46 +298,7 @@ header {
     margin-left: 1.8rem;
     margin-top: 1rem;
 }
-
-
-.navbar__send:hover .navbar__send--content {
-    display: block;
-    cursor: pointer;
-}
-
-.navbar__send--text {
-    background-color: rgba(84, 84, 84, 0.92);
-    color: rgba(255, 255, 255);
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    padding: 8px;
-    line-height: 22px;
-    position: absolute;
-    top: 4.1rem;
-    right: 22.3rem;
-    z-index: 1000;
-}
-
-.navbar__send--content {
-    display: none;
-}
-
-.navbar__send--arrow {
-    position: absolute;
-    margin: 0px -20px;
-    color: rgba(84, 84, 84, 0.92);
-}
-
-.navbar__send--arrow .iconify {
-    font-size: 15px;
-    position: relative;
-    top: 4px;
-    left: 3.8px;
-}
-
-.navbar__message--arrow {
+.navbar__message--arrow{
     position: absolute;
     bottom: -1.15rem;
     color: rgba(84, 84, 84, 0.92);
@@ -372,20 +313,6 @@ header {
 
 .navbar__message {
     position: relative;
-    right: 1rem;
-}
-
-.navbar__send--top .navbar__send--number {
-    background: rgb(254, 44, 85);
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 10px;
-    position: absolute;
-    top: 13px;
-    min-width: 20px;
-    height: 20px;
-    text-align: center;
 }
 
 .navbar__message--top {
@@ -399,22 +326,80 @@ header {
     font-weight: 600;
     border-radius: 10px;
     position: absolute;
-    right: 0rem;
-    top: -4px;
     min-width: 20px;
     height: 20px;
     text-align: center;
+    bottom: 1.4em;
+    left: 1.5em;
+}
+
+.navbar__send{
+    position: relative;
+}
+.navbar__send:hover .navbar__send--content {
+    display: block;
+    cursor: pointer;
+}
+
+.navbar__send--text {
+    background-color: rgba(84, 84, 84, 0.92);
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 8px;
+    position: absolute;
+    top: 3rem;
+    right: -1.8rem;
+    z-index: 1000;
+}
+
+.navbar__send--content {
+    display: none;
+}
+
+.navbar__send--arrow{
+    position: absolute;
+    font-size: xx-small;
+    color: rgba(84, 84, 84, 0.92);
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+/* .navbar__send--arrow .iconify {
+    font-size: 15px;
+    position: relative;
+    top: 4px;
+    left: 3.8px;
+} */
+
+.navbar__send .iconify {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+
+.navbar__send--top .navbar__send--number {
+    background: rgb(254, 44, 85);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    bottom: 1.4em;
+    left: 1em;
 }
 
 .navbar__info>img {
-    position: absolute;
     width: 32px;
     height: 32px;
     cursor: pointer;
     border-radius: 50%;
-    margin: 0 4px;
-    right: 13.5rem;
-    top: 1.1rem;
 }
 
 .navbar__info--menu {
