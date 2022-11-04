@@ -20,7 +20,8 @@
         border-right: 1px solid;
         width: 5rem;
     }
-    .btns{
+
+    .btns {
         margin-left: 0.7rem;
     }
 
@@ -41,7 +42,7 @@
 
     .user .user--main {
         padding-top: 2rem;
-        left: 5rem;
+        left: 3.5rem;
     }
 
     .content-video>video {
@@ -63,7 +64,9 @@
     .navbar__right {
         justify-content: space-evenly;
     }
+
     .right_content::-webkit-scrollbar {
         display: none;
     }
+
 }
