@@ -20,11 +20,6 @@ body {
     overflow: hidden;
     height: -webkit-fill-available;
 }
-/* #app{
-    width: 1536px;
-    height: 2118px;
-} */
-
 /* ---- main---- */
 .container{
     display: flex;

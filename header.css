@@ -366,19 +366,11 @@ header {
     margin-top: 4px;
 }
 
-/* .navbar__send--arrow .iconify {
-    font-size: 15px;
-    position: relative;
-    top: 4px;
-    left: 3.8px;
-} */
-
 .navbar__send .iconify {
     position: relative;
     cursor: pointer;
     font-size: 1.7em;
 }
-
 
 .navbar__send--top .navbar__send--number {
     background: rgb(254, 44, 85);
