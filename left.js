@@ -18,8 +18,8 @@ img.onmouseleave = function () {
 
 // ----------------Open infoMenu-------------------
 
-const infoMenu = $('.navbar__info--menu')
-const infoImg = $('.navbar__info')
+const infoMenu = $('.list--menu')
+const infoImg = $('.menu__info > img')
 
 infoImg.onclick = function () {
     if (infoMenu.classList.toggle('active')) {

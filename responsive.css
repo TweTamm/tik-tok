@@ -5,10 +5,10 @@
 
     .navbar__search,
     .navbar__upload--border,
-    .navbar__info,
-    .btn__text,
+    .menu__info,
+    .btn-item .btn__text,
     .accounts p,
-    .user__name,
+    .user .user__name,
     .user__text-one,
     .user__text-two,
     .music p,
@@ -17,8 +17,7 @@
     }
 
     .left_content {
-        border-right: 1px solid;
-        width: 5rem;
+        display: none;
     }
 
     .btns {
@@ -31,16 +30,16 @@
         height: 58rem;
         position: relative;
         width: 100%;
-        left: 0.7rem;
+        left: -0.3rem;
     }
 
     .btn-follow {
         position: relative;
-        right: 18rem;
-        top: -0.5rem;
+        right: 13rem;
+        top: 0.5rem;
     }
 
-    .user .user--main {
+    .user.user--main {
         padding-top: 2rem;
         left: 3.5rem;
     }

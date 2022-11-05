@@ -27,7 +27,7 @@ header {
 }
 
 
-.navbar__input {
+.navbar__search .navbar__input {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 28px;
@@ -51,7 +51,7 @@ header {
 
 }
 
-.navbar__btn {
+.navbar__input .navbar__btn {
     border-radius: 2px;
     position: relative;
     top: 3px;
@@ -64,7 +64,7 @@ header {
     border-bottom-right-radius: 18px;
 }
 
-.navbar__btn:hover {
+.navbar__input .navbar__btn:hover {
     background-color: rgba(22, 24, 35, 0.03);
 }
 
@@ -75,7 +75,7 @@ header {
     background: transparent;
 }
 
-.navbar__btn::before {
+.navbar__search .navbar__btn::before {
     content: "";
     height: 61%;
     width: 1px;
@@ -91,9 +91,9 @@ header {
     align-items: center;
     width: 290px;
     height: 65px;
-} 
+}
 
-.navbar__upload--border {
+.navbar__right .navbar__upload--border {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ header {
 
 }
 
-.navbar__upload--btn {
+.navbar__upload--border .navbar__upload--btn {
     border-radius: 2px;
     min-width: 110px;
     padding: 0.6em 8px;
@@ -109,35 +109,27 @@ header {
     background: none;
     cursor: pointer;
 }
-.navbar__upload--btn .navbar__upload--text {
+
+.navbar__upload--border .navbar__upload--text {
     margin-left: 0.5rem;
 }
 
-.navbar__upload--btn .iconify {
+.navbar__upload--border .iconify {
     font-size: 15px;
 }
 
-.navbar__upload--border:hover {
+.navbar__right .navbar__upload--border:hover {
     background-color: rgba(22, 24, 35, 0.03);
 }
 
-.iconify--plus {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-    position: relative;
-    right: 6px;
-    top: 1px;
-}
-
-.navbar__upload--text {
+.navbar__upload--border .navbar__upload--text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #161823;
 }
 
-.navbar__message--menu {
+.navbar__message--content .navbar__message--menu {
     display: none;
     position: absolute;
     width: 400px;
@@ -145,7 +137,7 @@ header {
     background-color: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
     border-radius: 8px;
-    z-index: 1000;
+    /* z-index: 1000; */
     opacity: 1;
     right: -2rem;
     padding-left: 16px;
@@ -153,7 +145,7 @@ header {
     bottom: -41rem;
 }
 
-.navbar__message--menu.active {
+.navbar__message--content .navbar__message--menu.active {
     display: block;
 }
 
@@ -165,8 +157,7 @@ header {
     margin: 0 10px;
     margin-top: 6px;
 }
-
-.navbar__message--text {
+.navbar__message--content .navbar__message--text {
     background-color: rgba(84, 84, 84, 0.92);
     color: rgba(255, 255, 255);
     font-size: 16px;
@@ -178,10 +169,10 @@ header {
     position: absolute;
     top: 3rem;
     right: -1.2rem;
-    z-index: -1;
+    z-index: 1000;
 }
 
-.navbar__message--header {
+.navbar__message--menu .navbar__message--header {
     position: fixed;
     width: 380px;
     padding-top: 24px;
@@ -189,16 +180,16 @@ header {
     background: rgba(255, 255, 255, 1);
 }
 
-.navbar__message--header h4 {
+.navbar__message--menu.navbar__message--header h4 {
     font-size: 22px;
 }
 
-.navbar__message--header ul {
+.navbar__message--menu .navbar__message--header ul {
     display: flex;
 }
 
-.navbar__message--header .item,
-.navbar__message--header .item-one {
+.navbar__message--menu .item,
+.navbar__message--menu .item-one {
     cursor: pointer;
     box-sizing: border-box;
     width: fit-content;
@@ -216,56 +207,56 @@ header {
     font-weight: 500;
 }
 
-.navbar__message--header .item:hover {
+.navbar__message--menu .item:hover {
     background-color: rgb(241, 235, 235);
 }
 
-.navbar__message--header .item-one {
+.navbar__message--menu .item-one {
     color: #fff;
     background-color: #000;
 }
 
-.item-first>p,
-.item-second>p {
+.navbar__message--notify .item-first>p,
+.navbar__message--notify .item-second>p {
     margin-top: 0.8rem;
     font-size: 15px;
     font-weight: 500;
     color: rgb(161, 161, 161);
 }
 
-.navbar__message--notify {
+.navbar__message--menu .navbar__message--notify {
     margin-top: 6.2rem;
     overflow-y: scroll;
 }
 
-.user_message {
+.navbar__message--menu .user-message {
     display: flex;
     margin-top: 0.8rem;
 }
 
-.user_message>img {
+.navbar__message--menu .user-message>img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
 
-.user_message .img-right {
+.user-message .img-right {
     width: 42px;
     height: 56px;
     border-radius: 2px;
 }
 
-.user_text {
+.user-message .user-text {
     padding: 0 0.7rem;
 }
 
-.user_text h5 {
+.user-message .user-text h5 {
     font-size: 15px;
     font-weight: 550;
 }
 
-.user_text>span,
-.user_text-footer>span {
+.user-message .user-text>span,
+.user-message .user-text-footer>span {
     font-size: 14.5px;
     color: rgb(176, 174, 174);
     width: 250px;
@@ -274,33 +265,35 @@ header {
     text-overflow: ellipsis
 }
 
-.user_text-footer>span {
+.user-message .user-text-footer>span {
     margin-left: 5px;
 }
 
-.user_text-footer {
+.user-message .user-text-footer {
     display: flex;
 }
 
-.user_text .vertical {
+.user-text .vertical {
     border-left: 3px solid rgb(238, 236, 236);
     height: 18px;
 }
 
-.user_message button {
+.user-message button {
     padding: 0 1rem;
     height: 2rem;
     background-color: rgb(242, 47, 47);
     color: #fff;
     border-radius: 3px;
     border: 1px solid rgb(249, 84, 84);
-    margin-left: 1.8rem;
+    margin-left: 3.2rem;
     margin-top: 1rem;
 }
-.navbar__message--arrow{
+
+.navbar__message--content .navbar__message--arrow {
     position: absolute;
     bottom: -1.15rem;
     color: rgba(84, 84, 84, 0.92);
+    z-index: 1000;
 }
 
 .navbar__message--arrow .iconify {
@@ -314,7 +307,7 @@ header {
     position: relative;
 }
 
-.navbar__message--top {
+.navbar__message .navbar__message--top {
     cursor: pointer;
 }
 
@@ -332,15 +325,16 @@ header {
     left: 1.5em;
 }
 
-.navbar__send{
+.navbar__right .navbar__send {
     position: relative;
 }
-.navbar__send:hover .navbar__send--content {
+
+.navbar__right .navbar__send:hover .navbar__send--content {
     display: block;
     cursor: pointer;
 }
 
-.navbar__send--text {
+.navbar__send--content .navbar__send--text {
     background-color: rgba(84, 84, 84, 0.92);
     color: rgba(255, 255, 255);
     font-size: 16px;
@@ -358,12 +352,13 @@ header {
     display: none;
 }
 
-.navbar__send--arrow{
+.navbar__send--content .navbar__send--arrow {
     position: absolute;
     font-size: xx-small;
     color: rgba(84, 84, 84, 0.92);
     margin-left: 8px;
     margin-top: 4px;
+    z-index: 1000;
 }
 
 .navbar__send .iconify {
@@ -386,14 +381,14 @@ header {
     left: 1em;
 }
 
-.navbar__info>img {
+.menu__info>img {
     width: 32px;
     height: 32px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.navbar__info--menu {
+.menu__info .list--menu {
     display: none;
     width: 14rem;
     top: 3.5rem;
@@ -406,11 +401,11 @@ header {
     opacity: 1;
 }
 
-.navbar__info--menu.active {
+.menu__info .list--menu.active {
     display: block;
 }
 
-.navbar__info--menu::after {
+.menu__info .list--menu::after {
     content: "";
     display: block;
     position: absolute;
@@ -420,16 +415,12 @@ header {
     height: 10px;
 }
 
-.hidden {
-    display: hidden;
-}
-
-.navbar__info--menu ul {
+.menu__info .list--menu ul {
     list-style: none;
     display: inline-block
 }
 
-.navbar__info--menu ul li {
+.menu__info .list--menu ul li {
     border-radius: 8px;
     font-weight: 500;
     display: flex;
@@ -439,7 +430,7 @@ header {
     cursor: pointer;
 }
 
-.navbar__info-footer::before {
+.list--menu .text-item-footer::before {
     content: "";
     border-top: 1px solid rgba(22, 24, 35, 0.12);
     position: absolute;
@@ -450,20 +441,20 @@ header {
     bottom: 3.4rem;
 }
 
-.navbar__info-footer {
+.list--menu .text-item-footer {
     padding: 10px 0;
 }
 
-.navbar__info--menu ul li:hover {
+.menu__info .list--menu ul li:hover {
     background-color: rgba(22, 24, 35, 0.03);
 
 }
 
-.navbar__info--menu .iconify {
+.list--menu .iconify {
     font-size: 23px;
 }
 
-.navbar__info--text {
+.list--menu .text-item {
     line-height: 22px;
     font-size: 16px;
     padding: 4px 8px;

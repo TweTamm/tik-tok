@@ -7,7 +7,7 @@ const app = {
             avatar: './assets/img/img1.jpg',
             name: 'bee_are_beeble',
             subname: 'Bee_are_beeble',
-            comment: 'Nhìn phát triển quá',
+            comment: 'Công nghệ phát triển quá',
             tag: '#xh',
             source: 'https://www.tiktok.com/music/DDU-DU-DDU-DU--JP-Ver--6973892626206427138?is_from_webapp=1&sender_device=pc',
             music: 'nhạc nền - 𝑩𝒆𝒆_𝒂𝒓𝒆_𝑩𝒆𝒆𝒃𝒍𝒆 ♡ - Bee_are_Beeble ♡',
@@ -199,7 +199,7 @@ const app = {
                   
                 </div>
        
-                <div class="content-video-btn">
+                <div class="content-video-main">
         
                     <div class="content-video">
         

@@ -9,7 +9,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.contents{
+.lef.content .contents{
     width: 300px;
 }
 .left_content:hover{
@@ -26,18 +26,18 @@
     background-color: #fff;
     border-radius: 100rem;
 } 
-.btns div{
+.contents .btns div{
     display: -webkit-box;
 }
-.btn__home, .btn__follow,
-.btn__livestream{
+.btns .btn__home, .btns .btn__follow,
+.btns .btn__livestream{
     padding: 8px;
     cursor: pointer;
 }
 .btns .iconify{
     font-size: 24.5px;
 }
-.btn__text{
+.btn-item .btn__text{
     font-weight: 600;
     font-size: 17px;
     line-height: 25px;
@@ -91,7 +91,7 @@
     height: 35px;
     border-radius: 50%;
 }
-.user__name{
+.user .user__name{
     display: flex;
     height: 32px;
     flex-grow: 1;
@@ -102,7 +102,7 @@
     left: 3px;
     color:rgb(44, 233, 254)
 }
-.user__name-bold{
+.user__name .user__name-bold{
     color: rgb(22, 24, 35);
     font-weight: 600;
     font-size: 14px;
@@ -110,7 +110,7 @@
     margin-top: -2px;
     max-width: 260px;
 }
-.user__name-little{
+.user__name .user__name-little{
     color: rgba(22, 24, 35, 0.75);
     font-weight: 400;
     font-size: 12px;
@@ -132,14 +132,14 @@
 .accounts .user:hover{
     background-color: rgba(22, 24, 35, 0.03);
 }
-.music__container--both{
+.music .music__container--both{
     display: flex;
 
 }
-.music__container:hover{
+.music .music__container:hover{
     background-color: rgba(22, 24, 35, 0.03);
 }
-.music__container{
+.music .music__container{
     cursor: pointer;
     box-sizing: border-box;
     width: fit-content;
@@ -151,14 +151,14 @@
     border-radius:12px;
     margin-right: 8px;
 }
-.music__container-tag{
+.music .music__container-tag{
     margin-top: 15px;
 }
-.iconify--tag{
+.music .iconify--tag{
     position: relative;
     left: -7px;
 }
-.music__text{
+.music .music__text{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -183,17 +183,17 @@
     height: 1px;
     margin-top: -15px;
 }
-.footer__text--details a{
+.footer__text .footer__text--details a{
     text-decoration: none;
     color: rgba(22, 24, 35, 0.5);
     font-weight: 500;
     font-size: 11px;
 }
-.footer__text--details a:hover{
+.footer__text .footer__text--details a:hover{
     color: rgba(22, 24, 35, 0.5);
     text-decoration: underline;
 }
-.footer__text--details{
+.footer__text .footer__text--details{
     margin-bottom: 8px;
 }
 .footer{
