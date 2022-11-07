@@ -27,7 +27,7 @@
     .right_content {
         overflow-y: scroll;
         overflow-x: hidden;
-        height: 58rem;
+        height: 43rem;
         position: relative;
         width: 100%;
         left: -0.3rem;
@@ -45,8 +45,8 @@
     }
 
     .content-video>video {
-        width: 375px;
-        height: 650px;
+        width: 498px;
+        height: 437px;
     }
 
     .right_content .user {
@@ -55,8 +55,8 @@
 
     .content-btn {
         position: relative;
-        right: 12rem;
-        top: 26rem;
+        right: 7rem;
+        top: 13rem;
 
     }
 
@@ -68,4 +68,44 @@
         display: none;
     }
 
+    .user .content::after {
+        bottom: 0.5rem;
+    }
+
+    .content-video-main .content-video {
+        margin-left: -50px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .right_content{
+        height: 69rem;
+    }
+    .content-video>video {
+        width: 498px;
+        height: 800px;
+    }
+
+    .content-btn {
+        position: relative;
+        top: 28rem;
+    }
+    .user .content::after {
+        bottom: -1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .right_content {
+        height: 46rem;
+    }
+
+    .content-video>video {
+        width: 492px;
+        height: 476px;
+    }
+    .content-btn {
+        position: relative;
+        top: 12rem;
+    }
 }

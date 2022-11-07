@@ -113,7 +113,7 @@ const app = {
             music: 'nhạc nền - ⒺⓃ🐰🐻🐿️🐥',
             video: './assets/video/vid6.mp4',
             button: 'Follow',
-            classname: 'user__info-img user__info-img--big user__info-img--big-six',
+            classname: 'user__info-img user__info-img--big',
             heart: '1266',
             comments: '5k',
             share: '2.5k',
